@@ -14,15 +14,23 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       upload_url: ${{ steps.create_release.outputs.upload_url }}
+      release_id: ${{ steps.create_release.outputs.release_id }}
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Create GitHub Release
         id: create_release
-        uses: actions/create-release@v4
+        uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ github.ref_name }}
           release_name: Release ${{ github.ref_name }}
+          body: |
+            # Release Notes
+            This is a new release based on tag ${{ github.ref_name }}.
+            # Add more detailed release notes here
           draft: false
           prerelease: false
 
