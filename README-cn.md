@@ -18,6 +18,12 @@
 - Go 1.24.4 或更高版本
 - 已配置 AWS CLI 并完成 SSO 登录 (`aws sso login`)
 
+### 安装程序到 MacOS 和 Linux
+
+```bash
+go install github.com/ShengzhenFu/aws-sso-creds-sync@latest
+```
+
 ### 构建安装
 
 1. 克隆代码库：

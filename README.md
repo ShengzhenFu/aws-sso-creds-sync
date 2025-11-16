@@ -18,6 +18,12 @@ A simple and practical AWS SSO credentials synchronization tool that retrieves t
 - Go 1.24.4 or higher
 - Configured AWS CLI and completed SSO login (`aws sso login`)
 
+### Installing Binary on MacOS and Linux
+
+```bash
+go install github.com/ShengzhenFu/aws-sso-creds-sync@latest
+```
+
 ### Building and Installing
 
 1. Clone the repository:
