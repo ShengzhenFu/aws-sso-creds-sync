@@ -18,11 +18,25 @@ A simple and practical AWS SSO credentials synchronization tool that retrieves t
 - Go 1.24.4 or higher
 - Configured AWS CLI and completed SSO login (`aws sso login`)
 
-### Installing Binary on MacOS and Linux
+### Installing Binary on Linux and Mac
 
+Using executable directly
+
+```bash
+# Linux
+wget https://github.com/ShengzhenFu/aws-sso-creds-sync/releases/download/v1.0.6/aws-sso-creds-sync-linux-amd64.tar.gz
+tar -zxvf aws-sso-creds-sync-linux-amd64.tar.gz
+# Mac (apple silicon)
+wget https://github.com/ShengzhenFu/aws-sso-creds-sync/releases/download/v1.0.6/aws-sso-creds-sync-darwin-arm64.tar.gz
+tar -zxvf aws-sso-creds-sync-darwin-arm64.tar.gz
+chmod + aws-sso-creds-sync
+```
+
+Using Go binary
 ```bash
 go install github.com/ShengzhenFu/aws-sso-creds-sync@latest
 ```
+
 
 ### Building and Installing
 

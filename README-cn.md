@@ -18,8 +18,24 @@
 - Go 1.24.4 或更高版本
 - 已配置 AWS CLI 并完成 SSO 登录 (`aws sso login`)
 
+
+
 ### 安装程序到 MacOS 和 Linux
 
+
+Download executable directly
+
+```bash
+# Linux
+wget https://github.com/ShengzhenFu/aws-sso-creds-sync/releases/download/v1.0.6/aws-sso-creds-sync-linux-amd64.tar.gz
+tar -zxvf aws-sso-creds-sync-linux-amd64.tar.gz
+# Mac (apple silicon)
+wget https://github.com/ShengzhenFu/aws-sso-creds-sync/releases/download/v1.0.6/aws-sso-creds-sync-darwin-arm64.tar.gz
+tar -zxvf aws-sso-creds-sync-darwin-arm64.tar.gz
+chmod + aws-sso-creds-sync
+```
+
+Go install
 ```bash
 go install github.com/ShengzhenFu/aws-sso-creds-sync@latest
 ```
